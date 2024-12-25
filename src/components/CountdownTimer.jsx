@@ -25,7 +25,14 @@ function CountdownTimer({ targetDate }) {
 
   return (
     <Group position="center" spacing="sm" className={classes.countdown}>
-      <Text>{timeLeft.days}d - {timeLeft.hours}h:{timeLeft.minutes}m:{timeLeft.seconds}s</Text>
+      <Text
+          order={1}
+          style={{
+          fontSize: 'clamp(2rem, 5vw, 3rem)',
+          fontWeight: 700,
+          }}
+      >
+        {timeLeft.days}d - {timeLeft.hours}h:{timeLeft.minutes}m:{timeLeft.seconds}s</Text>
     </Group>
   );
 }

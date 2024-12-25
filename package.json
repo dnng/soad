@@ -18,7 +18,9 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
     "gh-pages": "^6.2.0",
+    "postcss": "^8.4.49",
     "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
     "vite": "^5.2.8"
   },
   "homepage": "https://dnng.github.io/systemofadown-countdown"

@@ -3,17 +3,17 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/soad/', // Update this to match your GitHub repository name
+  base: '/soad/',
   build: {
-    outDir: 'dist', // Output folder for the build
+    outDir: 'dist',
     rollupOptions: {
-      input: 'index.html', // Entry point for the build
+      input: 'index.html',
     },
   },
   server: {
-    host: true, // Allow external access for local testing
+    host: true,
   },
   css: {
-    postcss: './postcss.config.js',
+    postcss: './postcss.config.cjs',
   },
 });

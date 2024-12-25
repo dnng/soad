@@ -1,5 +1,5 @@
 .countdown {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 5vw, 3rem) !important;;
     font-weight: bold;
     text-align: center;
     flex-wrap: wrap;
