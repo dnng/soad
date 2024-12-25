@@ -1,0 +1,14 @@
+.countdown {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: var(--mantine-spacing-md);
+  }
+  
+  @media (max-width: 768px) {
+    .countdown {
+      font-size: 2rem;
+    }
+  }
+  

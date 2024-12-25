@@ -1,10 +1,15 @@
 import { Center, Image } from '@mantine/core';
+import classes from './Header.module.css';
 
 function Header() {
   return (
-    <div className="header">
-      <Image src="/logo.webp" alt="System of a Down Logo" width={250} />
-    </div>
+    <Center className={classes.header}>
+      <Image
+        src="/soad/logo.webp"
+        alt="System of a Down Logo"
+        className={classes.logo}
+      />
+    </Center>
   );
 }
 

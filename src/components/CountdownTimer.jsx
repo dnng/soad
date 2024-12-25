@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Text, Group } from '@mantine/core';
 import dayjs from 'dayjs';
+import classes from './CountdownTimer.module.css';
 
 function CountdownTimer({ targetDate }) {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -23,11 +24,8 @@ function CountdownTimer({ targetDate }) {
   }, [targetDate]);
 
   return (
-    <Group position="center" style={{ fontSize: '3rem', fontWeight: 'bold' }}>
-      <Text>⏳ {timeLeft.days} dias</Text>
-      <Text>{timeLeft.hours} horas</Text>
-      <Text>{timeLeft.minutes} minutos</Text>
-      <Text>{timeLeft.seconds} segundos</Text>
+    <Group position="center" spacing="sm" className={classes.countdown}>
+      <Text>{timeLeft.days}d - {timeLeft.hours}h:{timeLeft.minutes}m:{timeLeft.seconds}s</Text>
     </Group>
   );
 }

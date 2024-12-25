@@ -1,0 +1,15 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-9)); /* Switch between light and dark theme */
+  color: light-dark(var(--mantine-color-dark-9), var(--mantine-color-gray-0)); /* Switch between light and dark text color */
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1;
+  padding: rem(16px); /* Automatically converts 16px to rem */
+  text-align: center;
+}

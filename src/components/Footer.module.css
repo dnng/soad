@@ -1,0 +1,8 @@
+.footer {
+    background-color: var(--mantine-color-dark-8);
+    padding: var(--mantine-spacing-md);
+    text-align: center;
+    color: var(--mantine-color-gray-0);
+    margin-top: auto;
+  }
+  
